@@ -1,0 +1,265 @@
+.body-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+.welcome {
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 24px;
+  color: #163d30;
+  font-family: 'Marck Script';
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.welcome h1{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  column-gap: 80px;
+  width: 80%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: max-content;
+  margin-bottom: 20px;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+}
+
+.link-content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 100%;
+}
+
+
+.link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.pagination button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #ccc;
+}
+
+.filters {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.filters select{
+  border: 1px solid #64b897;
+  border-radius: unset!important;
+  margin-bottom: 16px;
+  padding: 8px!important;
+  color: #457b66;
+  font-family: Poppins,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.filters select:focus{
+  outline: none;
+}
+
+.button{
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #64b897;
+  border-radius: unset!important;
+  margin-bottom: 16px;
+  padding: 8px!important;
+  color: #457b66;
+  font-family: Poppins,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  column-gap: 3px;
+  cursor: pointer;
+}
+
+.button.clicked {
+  color: #fff;
+  background-color: #163d30;
+}
+
+
+
+.card-time{
+  color: rgb(243, 196, 57);
+  width: 100%;
+}
+
+.baner{
+  display: flex;
+  width: 100%;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  position: relative;
+}
+
+.baner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.image-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.baner button{
+  cursor: pointer;
+  background-color:rgb(0, 0, 0, 0.8);
+  border: none;
+  border-radius: unset!important;
+  margin-top: 16px;
+  padding: 8px!important;
+  color: #ffffff;
+  font-family: Poppins,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  position: absolute;
+  top: 59%;
+  left: 50%;
+}
+
+.footer{
+  height: 250px;
+  width: 100%;
+  background-color: #163d30;  
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: rgb(255, 255, 255);
+  font-family: Poppins,sans-serif;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  row-gap: 15px;
+  margin-left: 30px;
+}
+
+.contact-info h3{
+   opacity: 0.6;
+}
+
+.contact-info a{
+  text-decoration: none;
+  color: rgba(255, 255, 255);
+
+}
+
+.card-info{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  padding-top: 20px;
+  background-color: #163d30;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.link-content-img img{
+  width: 400px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.link-content-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow{
+  width: 15px;
+}
+.arrow.disabled {
+  opacity: 0.5; /* Reducción de la opacidad para el efecto apagado */
+  cursor: not-allowed; /* Cambio del cursor a "no permitido" */
+}

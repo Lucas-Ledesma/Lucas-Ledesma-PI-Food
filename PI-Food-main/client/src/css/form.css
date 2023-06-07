@@ -1,0 +1,129 @@
+.form {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  margin-top: 50px;
+  padding: 50px;
+  margin-bottom: 50px;
+  height: 100%;
+  font-family: 'Marck Script', cursive;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.form textarea {
+  height: 300px;
+}
+
+.form span{
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.form-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgb(229, 231, 180);
+  flex-direction: column;
+  color: rgb(6, 54, 36);
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 60px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.form-button {
+  margin-top: 60px;
+  padding: 8px 16px;
+  background-color: rgb(6, 54, 36);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-button:hover {
+  background-color: rgb(11, 87, 59);
+}
+
+.diet-checkbox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.diet-checkbox input {
+  position: absolute;
+  left: -30%;
+}
+
+.probando{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.succes{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.succes-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 35%;
+}
+
+.succes-buttons button{
+  padding: 8px 16px;
+  background-color: rgb(6, 54, 36);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+
+.succes-container{
+  font-size: 30px;
+  font-family: 'Marck Script';
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(229, 231, 180);
+  row-gap: 50px;
+}
+
+.errors{
+  color: rgb(121, 16, 16);
+  margin-top: 10px;
+}

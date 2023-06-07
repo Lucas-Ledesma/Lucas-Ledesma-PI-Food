@@ -1,0 +1,89 @@
+.header{
+    display: flex;
+    height: 110px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #163d30;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    column-gap: 300px;
+}
+
+.search-bar {
+  display: flex;
+  position: relative;
+  height: 35%;
+  width: 20%;
+  border: none;
+}
+
+.search-input{
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1.5px solid #000000;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 81.5%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  z-index: 1;
+
+}
+
+.search-results button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.header img{
+    height: 60%;
+    width: 300px;
+    cursor: pointer;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.lupa{
+  background-color: #fff;
+  color: #000000;
+  border: none;
+  padding: 5px;
+  height: 95%;
+  width: 10%;
+  cursor: pointer;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+
+.showSearchBar .search-input-wrapper {
+  width: 80%;
+}
+
